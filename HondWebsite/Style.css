@@ -1,0 +1,32 @@
+li a:link {
+  color: #000000;
+}
+
+/* visited link */
+li a:visited {
+  color: #000000;
+}
+
+/* mouse over link */
+li a:hover {
+  color: #770000;
+}
+
+/* selected link */
+li a:active {
+  color: #aa0000;
+}
+table, th, td {
+  border: 1px solid black;
+} 
+img.inTextRight {
+	float: right;
+	margin-left: 15px;
+}
+img.inTextLeft {
+	float: left;
+	margin-right: 15px;
+}
+iframe {
+	max-width: 100%;
+}

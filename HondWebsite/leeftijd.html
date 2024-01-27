@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="Style.css">
+    <title>Mijn hond</title>
+    <script src="leeftijdenBerekenen.js"></script>
+  </head>
+  <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md" style="background-color:black;"><img src="images/hond-header.jpg" class="img-fluid" style="width:100%" alt="hond"></div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md" style="background-color:#ddff00;"><h1>Leeftijd</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md" style="background-color:gray;">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto"> <!--Dit is de navbar met evolutie-lichaamsbouw-verzorgen(trainen/voedsel)-over mij(hond/contact)-->
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="evolutie.html">Evolutie</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="lichaamsbouw.html">Lichaamsbouw</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Verzorgen</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="trainen.html">Trainen</a>
+									<a class="dropdown-item" href="voedsel.html">Voedsel</a>
+									<a class="dropdown-item active" href="leeftijd.html">Leeftijd</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Over mij</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+									<a class="dropdown-item" href="mijnHond.html">Mijn hond</a>
+									<a class="dropdown-item" href="contact.html">Contact</a>
+									<a class="dropdown-item" href="Wireframes.html">Wireframes</a>
+									<a class="dropdown-item" href="feedback.html">Feedback</a>
+								</div>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-9" style="background-color:#ffffff;">
+				<h2>Wat is de leeftijd van jouw hond?</h2>
+				<h3>Traditionele manier</h3>
+				<p>Misschien heb je er wel eens van gehoord dat, om de leeftijd van je hond naar mensenjaren te vertalen, 
+				je simpelweg zijn leeftijd keer zeven moet doen. Deze methode is bedacht door de gemiddelde 
+				leeftijdsverwachting van mensen en honden te vergelijken. Aangezien mensen ongeveer 7x zo oud worden 
+				als honden. Doe je de leeftijd van de hond keer zeven. Deze methode is niet erg betrouwbaar, 
+				omdat de hond in verhouding veel sneller volwassen zal worden dan een mens. </p>
+				<p>Om de leeftijd van je hond volgens de traditonele methode te berekenen, klik hieronder.</p>
+				<button id="knop1" onclick="traditioneleMethode()">Bereken de leeftijd van je hond</button>
+				<h3>De Amerikaanse Veterinary Medical Associaton</h3>
+				<p>De Amerikaanse Veterinary Medical Associaton, vat het vraagstuk rondom de leeftijd van een hond zo samen:</p>
+				<ul>
+					<li>Als jouw hond 1 is, is dat ongeveer 15 in mensenjaren.</li>
+					<li>Het tweede jaar, staat gelijk aan ongeveer 9 mensenjaren. Als je hond 2 is, is zij dus in mensenjaren ongeveer 24.</li>
+					<li>Daarna telt elk hondenjaar voor (gemiddeld) ongeveer 5 mensenjaren.</li>
+				</ul>
+				<p>Klik hieronder om de leeftijd van je hond volgens deze methode te berekenen</p>
+				<button id="knop2" onclick="snelVolwassen()">Bereken de leeftijd van je hond</button>
+				<h3>Leeftijd volgens wetenschappers.</h3>
+				<p>Het werk is gebaseerd op een relatief nieuw concept in het wetenschappelijk onderzoek naar veroudering bij mensen en honden, dat 
+				chemische wijzigingen in het DNA van een persoon gedurende een leven een zogenaamde epigenetische 
+				klok creëren. Wetenschappers hebben een machine gebouwd dat een dergelijke wijziging, de toevoeging 
+				van methylgroepen aan specifieke DNA-sequenties, de menselijke biologische leeftijd volgt - 
+				dat wil zeggen: de tol die ziekte, slechte levensstijl en genetica op ons lichaam eisen. Als gevolg 
+				hiervan hebben sommige groepen de DNA-methylatiestatus van een persoon omgezet in een 
+				leeftijdsschatting of zelfs een voorspelling van de levensverwachting. (Verontrustende ethici, 
+				die zeggen dat de gegevens kunnen worden misbruikt door forensische onderzoekers en 
+				verzekeringsmaatschappijen).</p>
+				<p>Klik hieronder om de leeftijd van je hond volgens deze methode te berekenen</p>
+				<button id="knop3" onclick="Science()">Bereken de leeftijd van je hond</button>
+				<h3>Verband gewicht en levensverwachting</h3>
+				<p>Het blijkt dat kleine honden ouder worden dan grote honden. 
+				Gewicht heeft dus invloed op levensverwachting en dus ook op het verouderingsproces. 
+				Deze volgende tabel geeft de honden leeftijd in mensenjaren aan en is gebaseerd op de 
+				gegevens van de Amerikaanse Kennel Club.</p>
+				<img src="images/TableHondenleeftijd.png" alt="tabel van de leeftijden van honden van 
+				verschillende leeftijdsclasse." style="width:500px" class="img-fluid">
+				<h3>Rassen en leeftijden.</h3>
+				<p>Het gewicht is niet het enige, dat invloed op de levensverwachting heeft. Ook het ras speelt een
+				grote rol. Daarom is er <a href="https://www.ajdesigner.com/fl_dog_age/dog_age.php">hier</a> een 
+				website, die ook rekening houdt met het ras.</p>
+				
+			</div>
+			<div class="col-md" style="background-color:#dddddd;">aanvullende artikels</div>
+		</div>
+		
+		<div class="row" style="background-color:#bbbbbb;">
+			<div class="col-md">
+				<h4>Alle Pagina's</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="evolutie.html">Evolutie</a></li>
+					<li><a href="lichaamsbouw.html">Lichaamsbouw</a></li>
+					<li><a href="trainen.html">Trainen</a></li>
+					<li><a href="voedsel.html">Voedsel</a></li>
+					<li><a href="leeftijd.html">Leeftijd</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<h6>bronnen:</h6>
+				<ul>
+					<li><a href="https://www.rtlnieuws.nl/node/86476" target="_blank">rtlnieuws</a></li>
+					<li><a href="https://www.dogline.nl/leeftijd-hond-mensenjaren/" target="_blank">dogline</a></li>
+					<li><a href="https://www.ajdesigner.com/fl_dog_age/dog_age.php" target="_blank">gratis online hondenrekenmachine</a></li>
+					<li><a href="https://www.sciencemag.org/news/2019/11/here-s-better-way-convert-dog-years-human-years-scientists-say" target="_blank">Science</a></li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<h4>Contact:</h4>
+				<ul>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="mijnHond.html">Mijn hond</a></li>
+					<li><a href="Wireframes.html">Wireframes</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
